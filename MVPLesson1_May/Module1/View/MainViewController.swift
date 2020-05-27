@@ -31,27 +31,32 @@ class MainViewController: UIViewController {
     
 }
 
-// Это расширение подписывает вью на протокол обмена функцией Greeting
 
-
-extension MainViewController: MainViewProtocol  {
-    func setGreeting(greeting: String) {
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
+        let comment = presenter.comments?.count ?? 0
+        return comment
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let comments = presenter.comments?[indexPath.row]
+        cell.textLabel?.text = comments?.body
+        return cell
     }
     
     
 }
 
 
-extension MainViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+extension MainViewController: MainViewProtocol {
+    func success() {
+        tableView.reloadData()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "TEST"
-        return cell
+    func failure(error: Error) {
+        print(error.localizedDescription)
     }
     
     
