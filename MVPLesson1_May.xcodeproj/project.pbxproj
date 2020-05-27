@@ -16,9 +16,9 @@
 		32D1B43E247E51EF00E0E859 /* MVPLesson1_MayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B43D247E51EF00E0E859 /* MVPLesson1_MayTests.swift */; };
 		32D1B449247E523E00E0E859 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B448247E523E00E0E859 /* Person.swift */; };
 		32D1B44B247E535600E0E859 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B44A247E535600E0E859 /* MainPresenter.swift */; };
-		32D1B44D247E845600E0E859 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B44C247E845600E0E859 /* SecondPresenter.swift */; };
 		32D1B453247E95F100E0E859 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D1B452247E95F100E0E859 /* MainViewController.xib */; };
 		32D1B455247E9ACA00E0E859 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B454247E9ACA00E0E859 /* ModuleBuilder.swift */; };
+		32D1B457247EA65E00E0E859 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B456247EA65E00E0E859 /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 		32D1B43F247E51EF00E0E859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D1B448247E523E00E0E859 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		32D1B44A247E535600E0E859 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		32D1B44C247E845600E0E859 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
 		32D1B452247E95F100E0E859 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		32D1B454247E9ACA00E0E859 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		32D1B456247EA65E00E0E859 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				32D1B44E247E954E00E0E859 /* Module1 */,
-				32D1B44C247E845600E0E859 /* SecondPresenter.swift */,
 				32D1B428247E51EC00E0E859 /* SceneDelegate.swift */,
 				32D1B454247E9ACA00E0E859 /* ModuleBuilder.swift */,
 				32D1B426247E51EC00E0E859 /* AppDelegate.swift */,
@@ -106,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				32D1B43D247E51EF00E0E859 /* MVPLesson1_MayTests.swift */,
+				32D1B456247EA65E00E0E859 /* MainPresenterTest.swift */,
 				32D1B43F247E51EF00E0E859 /* Info.plist */,
 			);
 			path = MVPLesson1_MayTests;
@@ -250,7 +250,6 @@
 			files = (
 				32D1B44B247E535600E0E859 /* MainPresenter.swift in Sources */,
 				32D1B42B247E51EC00E0E859 /* MainViewController.swift in Sources */,
-				32D1B44D247E845600E0E859 /* SecondPresenter.swift in Sources */,
 				32D1B427247E51EC00E0E859 /* AppDelegate.swift in Sources */,
 				32D1B455247E9ACA00E0E859 /* ModuleBuilder.swift in Sources */,
 				32D1B449247E523E00E0E859 /* Person.swift in Sources */,
@@ -263,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D1B43E247E51EF00E0E859 /* MVPLesson1_MayTests.swift in Sources */,
+				32D1B457247EA65E00E0E859 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
