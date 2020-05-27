@@ -14,6 +14,8 @@
 		32D1B430247E51EE00E0E859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D1B42F247E51EE00E0E859 /* Assets.xcassets */; };
 		32D1B433247E51EE00E0E859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D1B431247E51EE00E0E859 /* LaunchScreen.storyboard */; };
 		32D1B43E247E51EF00E0E859 /* MVPLesson1_MayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B43D247E51EF00E0E859 /* MVPLesson1_MayTests.swift */; };
+		32D1B449247E523E00E0E859 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B448247E523E00E0E859 /* Person.swift */; };
+		32D1B44B247E535600E0E859 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1B44A247E535600E0E859 /* MainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		32D1B439247E51EF00E0E859 /* MVPLesson1_MayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPLesson1_MayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D1B43D247E51EF00E0E859 /* MVPLesson1_MayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPLesson1_MayTests.swift; sourceTree = "<group>"; };
 		32D1B43F247E51EF00E0E859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D1B448247E523E00E0E859 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		32D1B44A247E535600E0E859 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				32D1B426247E51EC00E0E859 /* AppDelegate.swift */,
+				32D1B448247E523E00E0E859 /* Person.swift */,
+				32D1B44A247E535600E0E859 /* MainPresenter.swift */,
 				32D1B428247E51EC00E0E859 /* SceneDelegate.swift */,
 				32D1B42A247E51EC00E0E859 /* ViewController.swift */,
 				32D1B42C247E51EC00E0E859 /* Main.storyboard */,
@@ -200,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D1B44B247E535600E0E859 /* MainPresenter.swift in Sources */,
 				32D1B42B247E51EC00E0E859 /* ViewController.swift in Sources */,
 				32D1B427247E51EC00E0E859 /* AppDelegate.swift in Sources */,
+				32D1B449247E523E00E0E859 /* Person.swift in Sources */,
 				32D1B429247E51EC00E0E859 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
