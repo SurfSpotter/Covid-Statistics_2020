@@ -10,9 +10,18 @@
 // Это модель данных, у нее есть структура которая содержит две переменные : FirstName LastName , эти переменные в далнейшем передаются презентеру который потом их отправляет View
 
 import Foundation
+/*
+ "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam
+ */
 
-
-struct Person {
-    var firstName: String
-    var lastName: String
+struct Comment: Decodable {
+    var postId: Int
+    var name : String
+    var email : String
+    var body : String
 }
+

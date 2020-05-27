@@ -18,13 +18,13 @@ class Builder: ViewBuilder {
         //   Создаем функцию которая будет инициализировать и возвращать новый View
     static func createMain() -> UIViewController {
         // закидываем в модель данные
-        let model = Person(firstName: "David", lastName: "Blayne")
+        //let model = Person(firstName: "David", lastName: "Blayne")
         // обозначаем вью
         let view = MainViewController()
         // обозначаем презентер
-        let presenter = MainPresenter(view: view, person: model)
+        //let presenter = MainPresenter(view: view, person: model)
         // инициализируем презентер во вью
-        view.presenter = presenter
+        //view.presenter = presenter
         // возрващаем вью
         return view
     }
