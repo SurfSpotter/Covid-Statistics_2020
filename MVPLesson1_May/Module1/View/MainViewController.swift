@@ -11,8 +11,10 @@ import UIKit
 class MainViewController: UIViewController {
 
 
- // Добавляем текстЛэйбл на View
-    @IBOutlet weak var greetingLabel : UILabel!
+ // не забывааем в сториборде протянуть связи от таблицы  к Owner ( DataSource, Delegate ), Иначе нихрена работать е будет!
+    @IBOutlet weak var tableView: UITableView!
+    
+
     
     
 // Инициализируем Presenter в этом View
@@ -21,13 +23,11 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // регистрируем таблицу
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
-// Добавляем кнопку по нажатию на которую отправаляются данные  с презентера
-
-    @IBAction func didTapFunc(_ sender: Any) {
-        self.presenter.showGreeting()
-    }
+   
     
 }
 
@@ -36,9 +36,23 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainViewProtocol  {
     func setGreeting(greeting: String) {
-        self.greetingLabel.text = greeting
+       
     }
     
     
 }
 
+
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = "TEST"
+        return cell
+    }
+    
+    
+}
