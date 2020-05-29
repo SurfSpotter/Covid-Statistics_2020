@@ -29,9 +29,14 @@ protocol MainViewPresetnterProtocol: class {
     // инициализатор
     init(view: MainViewProtocol, networkService: NetworkServiceProtocol)
     // функция получения комментариев
-    func getComments()
+    //func getComments()
+    
+    // это функция получения данных из json
+    func getCurrentCovData()
     // переменная хранения массива комментариев
-    var comments: [Comment]? { get set}
+    //var comments: [Comment]? { get set}
+    //  переменная массива данных
+    var countryData: [CountryData]? {get set}
 }
 
 // Протокол Presetnter
@@ -39,33 +44,52 @@ protocol MainViewPresetnterProtocol: class {
 class MainPresenter: MainViewPresetnterProtocol {
     weak var view: MainViewProtocol?
     var networkService: NetworkServiceProtocol!
-    var comments : [Comment]?
+    //var comments : [Comment]?
+    var countryData: [CountryData]?
     
     required init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
         self.networkService = networkService
-        getComments()
+        //getComments()
+        getCurrentCovData()
        
     }
     
     // Здесь же вызываем функцию получения комментариев
            
-    func getComments() {
-        networkService.getComments { [weak self] result in
-            guard let self = self else {
-                return
-            }
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let comments):
-                    self.comments = comments
-                    self.view?.success()
-                case .failure(let error):
-                    self.view?.failure(error: error)
+//    func getComments() {
+//        networkService.getCurrentCovData { [weak self] result in
+//            guard let self = self else {
+//                return
+//            }
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .success(let comments):
+//                    self.comments = comments
+//                    self.view?.success()
+//                case .failure(let error):
+//                    self.view?.failure(error: error)
+//                }
+//            }
+//        }
+//    }
+    
+    func getCurrentCovData() {
+            networkService.getCurrentCovData { [weak self] result in
+                guard let self = self else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let countryData):
+                        self.countryData = countryData
+                        self.view?.success()
+                    case .failure(let error):
+                        self.view?.failure(error: error)
+                    }
                 }
             }
         }
-    }
     
     
     

@@ -9,7 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MVPLesson1_May" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="TuV-BS-QRu" id="U8s-3d-L1P"/>
+                <outlet property="casesOut" destination="HaO-Xz-x2x" id="ITY-Nv-rOS"/>
+                <outlet property="dateOut" destination="YAt-WD-MJ6" id="fMq-V6-cSd"/>
+                <outlet property="deathsOut" destination="3ih-QM-eLq" id="XUM-X2-uc6"/>
+                <outlet property="recoveredOut" destination="mp8-em-ZE0" id="uUt-6G-X55"/>
                 <outlet property="view" destination="iN0-l3-epB" id="k0w-Xt-N4l"/>
             </connections>
         </placeholder>
@@ -18,17 +21,43 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TuV-BS-QRu">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Y5w-to-7YJ"/>
-                        <outlet property="delegate" destination="-1" id="a7C-O0-zSb"/>
-                    </connections>
-                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uki-TS-NjK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-WD-MJ6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaO-Xz-x2x">
+                            <rect key="frame" x="0.0" y="166" width="414" height="158.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-em-ZE0" userLabel="Recovered">
+                            <rect key="frame" x="0.0" y="332.5" width="414" height="158"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEATHS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ih-QM-eLq">
+                            <rect key="frame" x="0.0" y="498.5" width="414" height="319.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uki-TS-NjK" secondAttribute="trailing" id="MZ5-CA-quQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uki-TS-NjK" secondAttribute="bottom" id="Vm9-9g-fWq"/>
+                <constraint firstItem="uki-TS-NjK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b8O-DX-eRe"/>
+                <constraint firstItem="uki-TS-NjK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="otm-ym-x5D"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
         </view>
