@@ -24,6 +24,15 @@ class MainViewController: UIViewController {
     var indicator = UIActivityIndicatorView()
     
     
+    // for localization
+    @IBOutlet weak var titleOut: UILabel!
+    @IBOutlet weak var contOut: UILabel!
+    @IBOutlet weak var recOut: UILabel!
+    @IBOutlet weak var deOut: UILabel!
+    @IBOutlet weak var dateUpdateOut: UILabel!
+    
+    
+    
 // Инициализируем Presenter в этом View
     
     var presenter: MainViewPresetnterProtocol!
@@ -45,6 +54,20 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Для локализации XibFile
+        titleOut.text = "Final COVID-19 statistics in Russia"
+        contOut.text = "Confirmed"
+        casesOut.text = "Data loading..."
+        recOut.text = "Recovered"
+        recoveredOut.text = "Data loading..."
+        deOut.text = "Deaths"
+        deathsOut.text = "Data loading..."
+        dateUpdateOut.text = "Datа updated"
+        dateOut.text = "Data loading...k"
+        
+        
+        
         
         refresdBtnOut.alpha = 0.5
         
