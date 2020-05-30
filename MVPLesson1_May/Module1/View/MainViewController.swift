@@ -20,12 +20,25 @@ class MainViewController: UIViewController {
     @IBOutlet weak var casesOut: UILabel!
     @IBOutlet weak var recoveredOut: UILabel!
     @IBOutlet weak var deathsOut: UILabel!
+    @IBOutlet weak var refresdBtnOut: UIButton!
+    var indicator = UIActivityIndicatorView()
     
     
 // Инициализируем Presenter в этом View
     
     var presenter: MainViewPresetnterProtocol!
-    
+   
+    /*
+     @IBOutlet var buttonTap: UIButton!
+     var indicator = UIActivityIndicatorView()
+
+     @IBAction func buttonTap(_ sender: AnyObject) {
+         buttonTap.setTitle("", for: .normal)
+         indicator.center = buttonTap.center
+         indicator.color = UIColor.black
+         indicator.startAnimating()
+     }
+     */
     
     
     
@@ -33,58 +46,44 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        refresdBtnOut.alpha = 0.5
         
-        
-        
-        
-      
     }
    
- 
+    override func viewDidAppear(_ animated: Bool) {
+        print("did appear")
+    }
+    @IBAction func refreshBtn(_ sender: Any) {
+        presenter.getCurrentCovData()
+        refresdBtnOut.alpha = 0.5
+        refresdBtnOut.isEnabled = false
+        
+    }
+    
 }
 
-
-//extension MainViewController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//        let comment = presenter.comments?.count ?? 0
-//        return comment
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-//        let comments = presenter.comments?[indexPath.row]
-//        cell.textLabel?.text = comments?.body
-//        return cell
-//    }
-    
-    
-//}
 
 
 extension MainViewController: MainViewProtocol {
     func success() {
-        //tableView.reloadData()
-        /*
-         var str = "2013-07-21T19:32:00Z"
-
-         var dateFor: NSDateFormatter = NSDateFormatter()
-         dateFor.dateFormat = "yyyy-MM-dd'T'HH:mm:ss:SSS"
-
-         var yourDate: NSDate? = dateFor.dateFromString(str)
-
-         println(yourDate)
-         
-         "2020-05-29T09:39:06+02:00"
-         */
         
-        //dateForm.string(from: (presenter.countryData?[0].lastChange)!)
-        
-        
-        // MARK: Получаем дату из строки
+        // заполняем нужные оутлеты данными
+        let customStrDate = getCustomStringDate()
+        casesOut.text = String(describing: presenter.countryData![0].confirmed)
+        dateOut.text = customStrDate
+        recoveredOut.text = String(describing: presenter.countryData![0].recovered)
+        deathsOut.text = String(describing: presenter.countryData![0].deaths)
+        refresdBtnOut.alpha = 1.0
+        refresdBtnOut.isEnabled = true
+    }
+  
+    
+    // Получаем строковую дату в нужном формате
+    func getCustomStringDate() -> String {
+      // MARK: Получаем дату из строки
         
         // Обьявляем переменную в которой будет лежать строковое значение даты
-        let isoDate = presenter.countryData![0].lastChange
+        let isoDate = presenter.countryData![0].lastUpdate
 
         // Объявляем DateFormatter и указывем его настройки
         let dateFormatter = ISO8601DateFormatter()
@@ -94,32 +93,25 @@ extension MainViewController: MainViewProtocol {
         
         //  потом создаем новый форматтер для того чтобы перевести в нужный стровый формат и настраиваем его
         let shortFormat = DateFormatter()
-        shortFormat.dateFormat = "dd-MM,HH:mm"
+        shortFormat.dateFormat = "dd-MM  HH:mm"
         
         // переводим полученную дату в нужный строковый формат  при помощи нового форматтера
         let dateWithMyStyle = shortFormat.string(from: date)
         
-        
-        
-        print("dadadate:")
-        print(dateWithMyStyle)
-        
-        
-      
-        
-        
-        casesOut.text = String(describing: presenter.countryData![0].confirmed) + " confirmed"
-        dateOut.text = "Last Update: " + dateWithMyStyle
-        recoveredOut.text = String(describing: presenter.countryData![0].recovered) + " recovered"
-        deathsOut.text = String(describing: presenter.countryData![0].deaths) + " deaths"
+        return dateWithMyStyle
     }
     
     func failure(error: Error) {
         
         // В случае ошибки фигачим алерт
-        let alert = UIAlertController(title: "Error", message: "Can't load data", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        self.present(alert, animated:  true, completion: nil)
+//        let alert = UIAlertController(title: "Error", message: "Can't load data", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+//            self.refresdBtnOut.alpha = 1.0
+//            self.refresdBtnOut.isEnabled = true
+//        }))
+//        self.present(alert, animated:  true, completion: nil)
+        refresdBtnOut.alpha = 1.0
+        refresdBtnOut.isEnabled = true
     }
     
     

@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBgr" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-HM-v5u">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBgr" translatesAutoresizingMaskIntoConstraints="NO" id="wsc-HM-v5u">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="897"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -24,11 +24,14 @@
                             <constraint firstItem="wsc-HM-v5u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9JB-vk-Eah"/>
                             <constraint firstItem="wsc-HM-v5u" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9Nx-zu-MUf"/>
                             <constraint firstAttribute="bottom" secondItem="wsc-HM-v5u" secondAttribute="bottom" id="Bn0-yE-dKo"/>
+                            <constraint firstItem="wsc-HM-v5u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bnd-ET-EV0"/>
                             <constraint firstItem="wsc-HM-v5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NZ2-EH-PqK"/>
+                            <constraint firstItem="wsc-HM-v5u" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="T1i-SP-IkG"/>
+                            <constraint firstItem="wsc-HM-v5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oe7-cm-jgG"/>
                             <constraint firstItem="wsc-HM-v5u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pCA-98-1KA"/>
                             <constraint firstItem="wsc-HM-v5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qMb-0i-jOt"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="wsc-HM-v5u" secondAttribute="bottom" constant="-34" id="rTF-nZ-d1B"/>
-                            <constraint firstItem="wsc-HM-v5u" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="zOT-HF-E5Q"/>
+                            <constraint firstAttribute="bottom" secondItem="wsc-HM-v5u" secondAttribute="bottom" id="rfA-Uj-sNx"/>
+                            <constraint firstItem="wsc-HM-v5u" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-45" id="zOT-HF-E5Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -31,10 +31,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let mainVC = Builder.createMain()
         
         // Создаем Navigation Controller  c указание корневого контроллера
-        let navBar = UINavigationController(rootViewController: mainVC)
+       // let navBar = UINavigationController(rootViewController: mainVC)
         
         // присваиваем  Window корневой контроллер
-        window?.rootViewController = navBar
+        window?.rootViewController = mainVC
         
         // показываем Window
         window?.makeKeyAndVisible()
