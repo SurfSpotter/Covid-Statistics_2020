@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		324B6909247ECABF00327454 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		324B6920248284B900327454 /* LocalizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeManager.swift; sourceTree = "<group>"; };
-		32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid_Stat_Ru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1B423247E51EC00E0E859 /* Covid Statist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid Statist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D1B426247E51EC00E0E859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D1B428247E51EC00E0E859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32D1B42A247E51EC00E0E859 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		32D1B424247E51EC00E0E859 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */,
+				32D1B423247E51EC00E0E859 /* Covid Statist.app */,
 				32D1B439247E51EF00E0E859 /* Covid_Stat_RuTests.xctest */,
 			);
 			name = Products;
@@ -182,7 +182,7 @@
 			);
 			name = Covid_Stat_Ru;
 			productName = MVPLesson1_May;
-			productReference = 32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */;
+			productReference = 32D1B423247E51EC00E0E859 /* Covid Statist.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32D1B438247E51EF00E0E859 /* Covid_Stat_RuTests */ = {
@@ -457,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surfSpot.MVPLesson1-May";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Covid Statist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surfSpot.MVPLesson1-May";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Covid Statist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
