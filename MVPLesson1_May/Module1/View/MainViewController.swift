@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
         recoveredOut.text = "Data loading..."
         deOut.text = "Deaths"
         deathsOut.text = "Data loading..."
-        dateUpdateOut.text = "Datа updated"
+        dateUpdateOut.text = "Last update:"
         dateOut.text = "Data loading...k"
         
         
