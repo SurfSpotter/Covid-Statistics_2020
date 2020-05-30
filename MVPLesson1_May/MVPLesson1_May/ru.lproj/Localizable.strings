@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Covid_Stat_Ru
+
+  Created by Алексей Чигарских on 30.05.2020.
+  Copyright © 2020 Алексей Чигарских. All rights reserved.
+*/
+
+
+"Final COVID-19 statistics in Russia" = "Статистика COVID-19 в России";
+"Confirmed" = "Выявлено заболевших";
+"Recovered" = "Выздоровело";
+"Deaths" = "Погибло";
+"Last update:" = "Обновлено:";
+"Data loading..." = "Ожидание данных...";
+
+
+

@@ -56,15 +56,15 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         // Для локализации XibFile
-        titleOut.text = "Final COVID-19 statistics in Russia"
-        contOut.text = "Confirmed"
-        casesOut.text = "Data loading..."
-        recOut.text = "Recovered"
-        recoveredOut.text = "Data loading..."
-        deOut.text = "Deaths"
-        deathsOut.text = "Data loading..."
-        dateUpdateOut.text = "Last update:"
-        dateOut.text = "Data loading...k"
+        titleOut.text = "Final COVID-19 statistics in Russia".loc()
+        contOut.text = "Confirmed".loc()
+        casesOut.text = "Data loading...".loc()
+        recOut.text = "Recovered".loc()
+        recoveredOut.text = "Data loading...".loc()
+        deOut.text = "Deaths".loc()
+        deathsOut.text = "Data loading...".loc()
+        dateUpdateOut.text = "Last update:".loc()
+        dateOut.text = "Data loading...".loc()
         
         
         
