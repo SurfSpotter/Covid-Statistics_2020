@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		324B6909247ECABF00327454 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		32D1B423247E51EC00E0E859 /* MVPLesson1_May.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPLesson1_May.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid_Stat_Ru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D1B426247E51EC00E0E859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D1B428247E51EC00E0E859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32D1B42A247E51EC00E0E859 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		32D1B42F247E51EE00E0E859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D1B432247E51EE00E0E859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D1B434247E51EE00E0E859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32D1B439247E51EF00E0E859 /* MVPLesson1_MayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPLesson1_MayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1B439247E51EF00E0E859 /* Covid_Stat_RuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Covid_Stat_RuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D1B43D247E51EF00E0E859 /* MVPLesson1_MayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPLesson1_MayTests.swift; sourceTree = "<group>"; };
 		32D1B43F247E51EF00E0E859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D1B448247E523E00E0E859 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 		32D1B424247E51EC00E0E859 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32D1B423247E51EC00E0E859 /* MVPLesson1_May.app */,
-				32D1B439247E51EF00E0E859 /* MVPLesson1_MayTests.xctest */,
+				32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */,
+				32D1B439247E51EF00E0E859 /* Covid_Stat_RuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32D1B422247E51EC00E0E859 /* MVPLesson1_May */ = {
+		32D1B422247E51EC00E0E859 /* Covid_Stat_Ru */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32D1B442247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "MVPLesson1_May" */;
+			buildConfigurationList = 32D1B442247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "Covid_Stat_Ru" */;
 			buildPhases = (
 				32D1B41F247E51EC00E0E859 /* Sources */,
 				32D1B420247E51EC00E0E859 /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = MVPLesson1_May;
+			name = Covid_Stat_Ru;
 			productName = MVPLesson1_May;
-			productReference = 32D1B423247E51EC00E0E859 /* MVPLesson1_May.app */;
+			productReference = 32D1B423247E51EC00E0E859 /* Covid_Stat_Ru.app */;
 			productType = "com.apple.product-type.application";
 		};
-		32D1B438247E51EF00E0E859 /* MVPLesson1_MayTests */ = {
+		32D1B438247E51EF00E0E859 /* Covid_Stat_RuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32D1B445247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "MVPLesson1_MayTests" */;
+			buildConfigurationList = 32D1B445247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "Covid_Stat_RuTests" */;
 			buildPhases = (
 				32D1B435247E51EF00E0E859 /* Sources */,
 				32D1B436247E51EF00E0E859 /* Frameworks */,
@@ -190,9 +190,9 @@
 			dependencies = (
 				32D1B43B247E51EF00E0E859 /* PBXTargetDependency */,
 			);
-			name = MVPLesson1_MayTests;
+			name = Covid_Stat_RuTests;
 			productName = MVPLesson1_MayTests;
-			productReference = 32D1B439247E51EF00E0E859 /* MVPLesson1_MayTests.xctest */;
+			productReference = 32D1B439247E51EF00E0E859 /* Covid_Stat_RuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 32D1B41E247E51EC00E0E859 /* Build configuration list for PBXProject "MVPLesson1_May" */;
+			buildConfigurationList = 32D1B41E247E51EC00E0E859 /* Build configuration list for PBXProject "Covid_Stat_Ru" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32D1B422247E51EC00E0E859 /* MVPLesson1_May */,
-				32D1B438247E51EF00E0E859 /* MVPLesson1_MayTests */,
+				32D1B422247E51EC00E0E859 /* Covid_Stat_Ru */,
+				32D1B438247E51EF00E0E859 /* Covid_Stat_RuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,7 +283,7 @@
 /* Begin PBXTargetDependency section */
 		32D1B43B247E51EF00E0E859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 32D1B422247E51EC00E0E859 /* MVPLesson1_May */;
+			target = 32D1B422247E51EC00E0E859 /* Covid_Stat_Ru */;
 			targetProxy = 32D1B43A247E51EF00E0E859 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPLesson1_May.app/MVPLesson1_May";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Covid_Stat_Ru.app/Covid_Stat_Ru";
 			};
 			name = Debug;
 		};
@@ -498,14 +498,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPLesson1_May.app/MVPLesson1_May";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Covid_Stat_Ru.app/Covid_Stat_Ru";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32D1B41E247E51EC00E0E859 /* Build configuration list for PBXProject "MVPLesson1_May" */ = {
+		32D1B41E247E51EC00E0E859 /* Build configuration list for PBXProject "Covid_Stat_Ru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32D1B440247E51EF00E0E859 /* Debug */,
@@ -514,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32D1B442247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "MVPLesson1_May" */ = {
+		32D1B442247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "Covid_Stat_Ru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32D1B443247E51EF00E0E859 /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32D1B445247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "MVPLesson1_MayTests" */ = {
+		32D1B445247E51EF00E0E859 /* Build configuration list for PBXNativeTarget "Covid_Stat_RuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32D1B446247E51EF00E0E859 /* Debug */,
